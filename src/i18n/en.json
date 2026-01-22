@@ -1,0 +1,94 @@
+{
+    "nav": {
+      "home": "Home",
+      "pricing": "Pricing",
+      "howItWorks": "How It Works",
+      "contact": "Contact",
+      "startTrial": "Start Free Trial"
+    },
+    "hero": {
+      "headline": "Hire Faster, Hire Better, Hire Smarter",
+      "subheadline": "Stop wasting 40 hours per position on CV screening. Let AI interview 100 candidates in the time it takes you to interview 3.",
+      "cta": "Start 7-Day Free Trial",
+      "ctaSubtext": "No credit card required for trial access"
+    },
+    "problem": {
+      "headline": "Hiring is Broken. You Know It.",
+      "timeDrain": "Time Drain",
+      "timeDrainDesc": "HR spends 15+ hours per hire just reading CVs",
+      "costlyMistakes": "Costly Mistakes",
+      "costlyMistakesDesc": "Bad hires cost 30% of annual salary to replace",
+      "bias": "Bias & Inconsistency",
+      "biasDesc": "Different interviewers, different standards"
+    },
+    "solution": {
+      "headline": "AI That Actually Works With Your Team",
+      "step1Title": "Upload CVs",
+      "step1Desc": "Upload 50 CVs in 30 seconds. We read them all.",
+      "step2Title": "AI Screens & Scores",
+      "step2Desc": "Technical skills (40%), Experience (30%), Tool match (20%), Domain fit (10%)",
+      "step3Title": "Choose Interview Mode",
+      "step3Desc": "Flexible modes for every scenario - technical roles, remote hiring, high-volume screening.",
+      "step4Title": "Get Structured Reports",
+      "step4Desc": "Evaluate. Compare. Hire. All in one dashboard."
+    },
+    "features": {
+      "headline": "Built for Teams Who Hire Smart, Not Fast",
+      "precisionTitle": "Decimal Precision Scoring",
+      "precisionDesc": "Differentiate 87.3 from 92.7 - not just 'good' vs 'great'",
+      "bilingualTitle": "Bilingual Interface",
+      "bilingualDesc": "Switch between Arabic and English instantly",
+      "voiceTitle": "Voice + Text Interviews",
+      "voiceDesc": "AI conducts full interviews or assists your HR team live",
+      "teamTitle": "Team Collaboration",
+      "teamDesc": "Invite hiring managers, share reports, assign roles",
+      "structuredTitle": "Structured Assessments",
+      "structuredDesc": "Standardized questions across all candidates - zero bias",
+      "cloudTitle": "Cloud Storage",
+      "cloudDesc": "Secure CV and interview recording storage - access anywhere"
+    },
+    "pricing": {
+      "headline": "Pricing That Scales With You",
+      "starter": "Starter",
+      "professional": "Professional",
+      "enterprise": "Enterprise",
+      "perMonth": "/month",
+      "cvsPerMonth": "CVs/month",
+      "interviews": "Interviews",
+      "teamMembers": "Team Members",
+      "emailSupport": "Email Support",
+      "prioritySupport": "Priority Support",
+      "dedicatedSupport": "Dedicated Support + Custom Training",
+      "unlimited": "Unlimited",
+      "trialText": "7-day free trial. All plans include full platform access. Cancel anytime.",
+      "startTrial": "Start Free Trial"
+    },
+    "finalCta": {
+      "headline": "Stop Guessing. Start Hiring.",
+      "subheadline": "Join hundreds of teams who replaced gut-feel hiring with data-driven decisions.",
+      "cta": "Start Your Free Trial",
+      "encryption": "Bank-level encryption",
+      "gdpr": "GDPR-compliant data handling",
+      "secure": "Secure payment via Qi Card"
+    },
+    "footer": {
+      "product": "Product",
+      "company": "Company",
+      "legal": "Legal",
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "about": "About Us",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "allRightsReserved": "All rights reserved."
+    },
+    "contact": {
+      "headline": "Get in Touch",
+      "subheadline": "Have questions? We'd love to hear from you.",
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "messagePlaceholder": "Your Message",
+      "send": "Send Message"
+    }
+  }

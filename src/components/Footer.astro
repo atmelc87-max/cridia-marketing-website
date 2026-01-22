@@ -1,0 +1,88 @@
+---
+import { t } from '../i18n/utils';
+
+export interface Props {
+  lang: 'en' | 'ar';
+}
+
+const { lang } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-gray-300 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <!-- Company Info -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <img 
+            src="/cridia-logo-white.png" 
+            alt="Cridia Hire" 
+            class="h-8"
+          />
+          <span class="text-xl font-bold text-white">Cridia</span>
+        </div>
+        <p class="text-sm text-gray-400">
+          AI-powered recruitment platform for smarter hiring decisions.
+        </p>
+      </div>
+
+      <!-- Product Links -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">{t(lang, 'footer.product')}</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href={`/${lang}#features`} class="hover:text-white transition">
+              {t(lang, 'footer.features')}
+            </a>
+          </li>
+          <li>
+            <a href={`/${lang}/pricing`} class="hover:text-white transition">
+              {t(lang, 'nav.pricing')}
+            </a>
+          </li>
+          <li>
+            <a href={`/${lang}#how-it-works`} class="hover:text-white transition">
+              {t(lang, 'footer.howItWorks')}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Company Links -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">{t(lang, 'footer.company')}</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href={`/${lang}#contact`} class="hover:text-white transition">
+              {t(lang, 'footer.contact')}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Legal Links -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">{t(lang, 'footer.legal')}</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="#" class="hover:text-white transition">
+              {t(lang, 'footer.privacy')}
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-white transition">
+              {t(lang, 'footer.terms')}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+      <p>&copy; {currentYear} Cridia Hire. {t(lang, 'footer.allRightsReserved')}</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,86 @@
+---
+import { t } from '../i18n/utils';
+
+export interface Props {
+  lang: 'en' | 'ar';
+}
+
+const { lang } = Astro.props;
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <a href={`/${lang}`} class="flex items-center gap-2">
+        <img 
+          src="/cridia-logo.png" 
+          alt="Cridia Hire" 
+          class="h-8"
+        />
+        <span class="text-xl font-bold text-gray-900">Cridia</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-8">
+        <a 
+          href={`/${lang}#features`} 
+          class="text-gray-600 hover:text-gray-900 transition"
+        >
+          {t(lang, 'nav.howItWorks')}
+        </a>
+        <a 
+          href={`/${lang}#pricing`} 
+          class="text-gray-600 hover:text-gray-900 transition"
+        >
+          {t(lang, 'nav.pricing')}
+        </a>
+        <a 
+          href={`/${lang}#contact`} 
+          class="text-gray-600 hover:text-gray-900 transition"
+        >
+          {t(lang, 'nav.contact')}
+        </a>
+
+        <!-- Language Toggle -->
+        <div class="flex items-center gap-2 border-l border-gray-300 pl-4">
+          <a 
+            href="/en" 
+            class={`px-3 py-1 rounded text-sm font-medium transition ${
+              lang === 'en' 
+                ? 'bg-blue-600 text-white' 
+                : 'text-gray-600 hover:bg-gray-100'
+            }`}
+          >
+            EN
+          </a>
+          <a 
+            href="/ar" 
+            class={`px-3 py-1 rounded text-sm font-medium transition ${
+              lang === 'ar' 
+                ? 'bg-blue-600 text-white' 
+                : 'text-gray-600 hover:bg-gray-100'
+            }`}
+          >
+            AR
+          </a>
+        </div>
+
+        <!-- CTA Button -->
+        <a 
+          href="https://hire.cridia.ai/register" 
+          class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition font-medium"
+        >
+          {t(lang, 'nav.startTrial')}
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-gray-600">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+</header>
