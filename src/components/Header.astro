@@ -75,35 +75,37 @@ const { lang } = Astro.props;
         </a>
       </div>
 
-      <!-- Mobile Actions -->
-      <div class="flex items-center gap-3 md:hidden">
-        <div class="flex items-center gap-1 rounded-md bg-gray-100 p-1">
-          <a 
-            href="/en" 
-            class={`px-2 py-1 rounded text-xs font-semibold transition ${
-              lang === 'en' 
-                ? 'bg-blue-600 text-white' 
-                : 'text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            EN
-          </a>
-          <a 
-            href="/ar" 
-            class={`px-2 py-1 rounded text-xs font-semibold transition ${
-              lang === 'ar' 
-                ? 'bg-blue-600 text-white' 
-                : 'text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            AR
-          </a>
-        </div>
-        <button class="text-gray-600" aria-label="Open menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-gray-600" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Language Toggle -->
+    <div class="md:hidden border-t border-gray-200 py-2">
+      <div class="flex items-center justify-center gap-2">
+        <a 
+          href="/en" 
+          class={`px-3 py-1 rounded text-sm font-semibold transition ${
+            lang === 'en' 
+              ? 'bg-blue-600 text-white' 
+              : 'text-gray-600 hover:bg-gray-100'
+          }`}
+        >
+          EN
+        </a>
+        <a 
+          href="/ar" 
+          class={`px-3 py-1 rounded text-sm font-semibold transition ${
+            lang === 'ar' 
+              ? 'bg-blue-600 text-white' 
+              : 'text-gray-600 hover:bg-gray-100'
+          }`}
+        >
+          AR
+        </a>
       </div>
     </div>
   </nav>
